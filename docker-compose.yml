@@ -30,6 +30,7 @@ services:
       - postgres
       - redis
       - mysql
+
   # aplicação Postgres
   postgres:
     image: postgres:14.3-alpine
@@ -44,6 +45,7 @@ services:
       POSTGRES_HOST_AUTH_METHOD: trust
     ports:
       - 20000:5432
+
   # aplicação MySQL
   mysql:
     image: mysql:8.0.29-debian
